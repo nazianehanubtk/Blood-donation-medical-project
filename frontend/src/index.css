@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: #e11d48;
+  --red-dark: #be123c;
+  --red-light: #ffe4e9;
+  --red-glow: rgba(225, 29, 72, 0.25);
+
+  --purple: #8b5cf6;
+  --purple-dark: #7c3aed;
+  --purple-light: #f3ecff;
+  --purple-glow: rgba(139, 92, 246, 0.25);
+
+  --green: #16a34a;
+  --green-light: #e7f9ee;
+  --green-glow: rgba(22, 163, 74, 0.2);
+
+  --ink: #16181d;
+  --muted: #6b7280;
+  --muted-light: #9aa0ac;
+  --border: #eaecf0;
+  --card: #ffffff;
+  --bg: #fafafb;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 1px 2px rgba(16, 18, 25, 0.04), 0 8px 24px rgba(16, 18, 25, 0.06);
+  --shadow-md: 0 4px 12px rgba(16, 18, 25, 0.06), 0 16px 40px rgba(16, 18, 25, 0.12);
+  --shadow-hover: 0 8px 20px rgba(16, 18, 25, 0.08), 0 20px 48px rgba(16, 18, 25, 0.14);
+
+  --sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --heading: "Poppins", var(--sans);
+
+  font-family: var(--sans);
+  color: var(--ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--red-light);
+  color: var(--red-dark);
+}
+
+/* subtle scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8dae0;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2c5cc;
+}
